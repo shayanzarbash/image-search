@@ -10,7 +10,6 @@ function App() {
     const response = await fetch(urlIp).then((response) => response.json());
     setLoca(response);
     console.log(response);
-    return response;
   }
 
   const getWeather = async (lat, lon) => {
