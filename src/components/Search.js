@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Search = ({onSubmit}) => {
+const Search = ({ onSubmit }) => {
 
 
     const [image, setImage] = useState('');
@@ -10,7 +10,8 @@ const Search = ({onSubmit}) => {
     }
 
     const handleUp = (e) => {
-        if(e.keyCode === 13){
+        console.log("e", e.target.value);
+        if (e.keyCode) {
             onSubmit(image);
         }
     }
@@ -18,7 +19,7 @@ const Search = ({onSubmit}) => {
 
     return (
         <div>
-            <input type='text' placeholder="all" className='searchForm' value={image} onChange={handleChange} onKeyUp={handleUp}/>
+            <input type='text' placeholder="all" className='searchForm' value={image} onChange={handleChange} onKeyUp={handleUp} />
 
             <p>{image}</p>
         </div>

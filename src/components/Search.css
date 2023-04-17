@@ -1,0 +1,14 @@
+.image-list {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.image-list .image-card img {
+    width: 100%;
+    height: auto;
+}
