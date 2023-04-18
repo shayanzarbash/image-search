@@ -5,6 +5,7 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
+  background-color: rgba(24, 24, 27, 0.98);
 }
 
 ol,

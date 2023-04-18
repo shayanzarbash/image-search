@@ -7,6 +7,9 @@
     grid-template-rows: auto;
     grid-gap: 10px;
 }
+.image-list .image-card {
+    grid-row-end: span 2;
+}
 
 .image-list .image-card img {
     width: 100%;
