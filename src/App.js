@@ -26,9 +26,9 @@ function App() {
     }
     catch (error) {
       console.error(error.message);
+      setLoading(false);
     }
     setLoading(false);
-
   };
 
   useEffect(() => {
@@ -39,14 +39,15 @@ function App() {
     <>
       <div className="home">
         <Search onSubmit={onSubmit} />
-        <div>
+        <div className="loading">
           {loading && <ReactLogo />}
+        </div>
+        <div>
           {!loading && (
             <ImageLists result={images} />
           )}
         </div>
       </div>
-
     </>
   );
 }

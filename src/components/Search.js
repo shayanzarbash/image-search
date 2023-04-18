@@ -17,8 +17,9 @@ const Search = ({ onSubmit }) => {
     }
 
     return (
-        <div>
-            <input type='text' placeholder="all" className='searchForm' value={image} onChange={handleChange} onKeyUp={handleUp} />
+        <div className='searchTop'>
+            <span>Image Search By Unsplash</span>
+            <input type='text' placeholder="Serach..." className='searchForm' value={image} onChange={handleChange} onKeyUp={handleUp} />
         </div>
     )
 }
