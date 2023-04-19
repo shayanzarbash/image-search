@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
     grid-template-rows: auto;
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 .image-list .image-card {
     grid-row-end: span 2;
@@ -14,6 +14,7 @@
 .image-list .image-card img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .searchForm {
